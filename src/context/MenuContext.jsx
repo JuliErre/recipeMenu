@@ -70,8 +70,17 @@ function MenuContextProvider({ children }) {
     }
   }
 }
-  function removeRecipe(id) {
-    setMenu(menu.filter(recipe => recipe.id !== id));
+  function removeRecipe(recipe) {
+    setMenu(menu.filter(r => r.id !== recipe.id));
+    toast({
+
+      title: ` ${recipe.title} removed from menu`,
+      status: 'success',
+      duration: 4000,
+      isClosable: true,
+
+    })
+    
   }
 
 
@@ -82,7 +91,6 @@ function MenuContextProvider({ children }) {
       addToMenu,
       menu,
       removeRecipe,
-
 
     }}>
       {children}

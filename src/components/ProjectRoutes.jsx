@@ -3,6 +3,7 @@ import { Route, useNavigate, Navigate, Routes } from "react-router-dom";
 import DetailPage from "./DetailPage";
 import HomeScreen from "./HomeScreen";
 import Login from "./Login";
+import NotFoundPage from "./NotFoundPage";
 import SearchPage from "./SearchPage";
 
 function ProjectRoutes() {
@@ -25,6 +26,7 @@ function ProjectRoutes() {
       <Route exact path="/login" element={<Login />} />
       <Route exact path="/search" element={<SearchPage />} />
       <Route path="/detail/:id" element={<DetailPage />} />
+      <Route path="*" element={<NotFoundPage/>} />
     </Routes>
   );
 }

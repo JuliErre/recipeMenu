@@ -57,7 +57,7 @@ function RecipeCard({ recipe }) {
             {" "}
             Detail{" "}
           </Button>
-          <DeleteButton id={recipe.id} />
+          <DeleteButton recipe={recipe} />
         </Flex>
       </Box>
     </HStack>

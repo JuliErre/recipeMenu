@@ -4,14 +4,14 @@ import { FaTrash } from 'react-icons/fa'
 import { useLocation } from 'react-router-dom'
 import { MenuContext } from '../context/MenuContext'
 
-function DeleteButton({id}) {
+function DeleteButton({recipe}) {
     const location = useLocation()
     const {removeRecipe} = useContext(MenuContext)
     
     return (
         <>
             {location.pathname === '/' &&
-                <Button size='md' onClick={() => removeRecipe(id)} variant='outline' colorScheme='black' leftIcon={<Icon as={FaTrash} /> } > Delete</Button>
+                <Button size='md' onClick={() => removeRecipe(recipe)} variant='outline' colorScheme='black' leftIcon={<Icon as={FaTrash} /> } > Delete</Button>
             }
         </>
     )

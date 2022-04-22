@@ -18,7 +18,6 @@ function SearchPage() {
         .catch(err=>console.log(err))
 
     },[input]) 
-    console.log(recipes)
   return (
     <Flex  backgroundColor='gray.200' py='25px' width='100%' minHeight='85vh'  flexDirection='row' wrap='wrap' justify='center' align='flex-start' spacing='0px' gap='15px'>
         { !loading ? 

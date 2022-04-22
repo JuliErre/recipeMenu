@@ -2,13 +2,12 @@ import { HStack, Flex, Text, Icon } from "@chakra-ui/react";
 import React, { useContext, useEffect, useState } from "react";
 import { MenuContext } from "../context/MenuContext";
 import RecipeCard from "./RecipeCard";
-import { FaLeaf } from "react-icons/fa";
 import { GiHealthNormal } from "react-icons/gi";
 import { FaClock } from "react-icons/fa";
 import { FaDollarSign } from "react-icons/fa";
 
 function MenuContainer() {
-  const { addToMenu, removeRecipe, menu } = useContext(MenuContext);
+  const { menu } = useContext(MenuContext);
   const [time, setTime] = useState(0);
   const [healthScore, setHealthScore] = useState(0);
   const [price, setPrice] = useState(0);
