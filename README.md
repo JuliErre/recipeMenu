@@ -1,6 +1,6 @@
 # Recipe Menu
 
-It's a page to create a menu with 4 recipes, 2 vegan y 2 non-vegan.
+It's a page to create a menu with 4 recipes, 2 vegan and 2 non-vegan.
 
 ## Deployment
 
