@@ -5,6 +5,7 @@ import RecipeCard from "./RecipeCard";
 import { GiHealthNormal } from "react-icons/gi";
 import { FaClock } from "react-icons/fa";
 import { FaDollarSign } from "react-icons/fa";
+import CardList from "./CardList";
 
 function MenuContainer() {
   const { menu } = useContext(MenuContext);
@@ -62,9 +63,7 @@ function MenuContainer() {
         gap="15px"
         maxWidth='100%'
       >
-        {menu.map((recipe) => (
-          <RecipeCard key={recipe.id} recipe={recipe} />
-        ))}
+       <CardList recipes={menu} />
       </HStack>
     </>
   );

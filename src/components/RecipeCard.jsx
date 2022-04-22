@@ -34,6 +34,7 @@ function RecipeCard({ recipe }) {
         pl="20px"
         pt="20px"
         pr="5px"
+       
       >
         <Flex>
           <Heading fontWeight="bold" size="md">
@@ -45,7 +46,7 @@ function RecipeCard({ recipe }) {
           maxWidth="130px"
           marginTop="10px"
           flexDirection="column"
-          justify="center"
+          justifyContent="center"
           gap="5px"
         >
           <Button
