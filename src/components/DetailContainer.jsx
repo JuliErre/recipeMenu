@@ -33,8 +33,6 @@ function DetailContainer({ id }) {
           <Skeleton width="500px" height="400px" />
         </Stack>
       ) : (
-        // <Spinner size='xl' color='green.400'/>
-
         <>
           <DetailCard recipe={detail} />
         </>
